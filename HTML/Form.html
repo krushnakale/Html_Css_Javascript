@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>This is the Introduction Form</title>
+
+        <title>Personal information </title>
+        <link rel="stylesheet" href="../CSS/form.css">
     </head>
-    <body>
-    <form action="next_page.html" method="get" >
-    
+    <body  id="main">
+
+    <form action="next_page.html" method="get" id="form">
+        <h1 id="heading1">Personal information </h1>
+        <div class="info">
     <label for="fname">First Name:</label>
     <input id="fname" autocomplete="given-name" type="Text" required><br>
     <label for="lname">Last Name:</label>
@@ -13,10 +17,18 @@
     <label for="Email">Email: </label>
     <input autocomplete="email" id="Email" type="email" required><br>
     <label for="Phone">Phone:</label>
-    <input autocomplete="tel" id="Phone" type="number"   required><br>
-    <input type="submit" value="submit">
-    <label></label>
+    <input id="Phone" type="tel"  minlength="10" maxlength="10" required><br>
+    <label for="date">Choose a Date</label>
+    <input  id="date" type="date"  required>
+    </div>          
+   <input type="submit"  class="submit" value="Submit">
+
+
     </form>
-   
+
+
+
+    
+  
  </body>
 <html>
