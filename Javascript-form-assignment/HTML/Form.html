@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Personal information </title>
+        <link rel="stylesheet" href="../CSS/form.css">
+        <script src="../Javascript/form.validation.js"></script>
+    </head>
+    <body  id="main">
+
+    <form action="next_page.html" method="get" id="form" >
+        <h1 id="heading1">Personal information </h1>
+        <div class="info">
+    <label for="fname">First Name:</label>
+    <input id="fName" autocomplete="given-name" type="Text" placeholder="Type your first name"  ><br>
+    <label for="lname">Last Name:</label>
+    <input autocomplete="family-name" id="lname" type="Text" placeholder="Type your last name" ><br>
+    <label for="Email">Email: </label>
+    <input autocomplete="email" id="email" type="type" pattern="^[a-zA-Z0-9]+([._]{1}[a-zA-Z0-9]+)*@[a-zA-Z0-9]+([\.]{1}[a-zA-Z0-9]+)+$"  placeholder="Type your email address" required><br>
+    <label for="Phone">Phone:</label>
+    <input id="Phone" type="tel"   placeholder="Type your phone Number"><br>
+    <label for="date">Choose a Date</label>
+    <input id="date" type="date" >     
+    </div>        
+   <input type="submit"  class="submit" value="Submit" validform() >
+</form>
+</body>
+<html>
